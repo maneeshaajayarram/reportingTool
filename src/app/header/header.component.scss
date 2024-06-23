@@ -1,0 +1,85 @@
+.container-fluid{
+    background-color: #efefef;
+    font-size: 14px;
+}
+.title{
+    padding: 2% 1%;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 50;
+
+}
+i{
+    color: blue
+}
+.dollar,.bed,.clock,.globe{
+    margin-right: 1%;
+}
+
+.btn{
+    border: solid 1px black;
+    border-radius: 1%;
+}
+
+
+.a,.nodata{
+   color: red;
+}
+
+p{
+    margin-left:5%
+}
+
+.refresh{
+    padding-left:15%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.refreshbtn{
+    border-width: 0px;
+    border-radius: 50%;
+    background-color: #c5d7f1
+
+}
+.refresh p{
+    padding-bottom: 1%;
+    padding-right: 1%
+}
+.bi{
+    font-size: 20px;
+}
+    
+
+.information{
+    margin:3% 0%;
+}
+button{
+    background-color: white;
+    color:blue
+   
+}
+
+input{
+    width:48%
+}
+form{
+   display:flex;
+   justify-content: space-between;
+}
+.star{
+    color:red
+}
+.applybtn{
+    margin-top:12%;
+    border-width: 0px;
+    background-color:  #efefef;
+    color:black;
+    margin-left:5%
+}
+.resetbtn{
+    margin-top:12%;
+    margin-left:15%;
+    background-color:  #efefef;
+    border-width: 0px;
+}

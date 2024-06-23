@@ -1,0 +1,387 @@
+{
+    "contactInfo": {
+        "contactTitle": "QA Team",
+        "contactName": "Stephanie Dodson",
+        "address": {
+            "addressLine1": "300 N Martingale",
+            "addressLine2": "",
+            "cityName": "Schaumburg",
+            "stateName": "",
+            "countryCode": "US",
+            "countryName": "USA",
+            "postalCode": "60173"
+        },
+        "phones": [
+            {
+                "phoneType": "Voice",
+                "phoneLocationType": "PropertyDirect",
+                "phoneNumber": "999-999-9999"
+            },
+            {
+                "phoneType": "Fax",
+                "phoneLocationType": "PropertyDirect",
+                "phoneNumber": "999-999-9999"
+            },
+            {
+                "phoneType": "Voice",
+                "phoneLocationType": "Office",
+                "phoneNumber": "999-999-9999"
+            }
+        ],
+        "webContacts": []
+    },
+    "currencies": [
+        {
+            "currencyId": 1,
+            "currencyCode": "USD",
+            "isDefault": true,
+            "displayFormat": {
+                "format": "##,###,###.##",
+                "decimalSeparator": ".",
+                "unitSeparator": ",",
+                "scale": 3,
+                "precision": 2
+            }
+        }
+    ],
+    "timezoneInfo": {
+        "propertyTimeZone": "UTC+08:00",
+        "propertyTimeZoneCode": "Asia/Irkutsk",
+        "propertyTimeZoneDescription": "(UTC+08:00) Irkutsk, Ulaan Bataar",
+        "gmtOffset": "8.0",
+        "timeZoneList": [
+            {
+                "code": "Pacific/Kwajalein",
+                "description": "(UTC-12:00) Eniwetok, Kwajalein"
+            },
+            {
+                "code": "Pacific/Midway",
+                "description": "(UTC-11:00) Midway Island, Samoa"
+            },
+            {
+                "code": "US/Hawaii",
+                "description": "(UTC-10:00) Hawaii"
+            },
+            {
+                "code": "US/Alaska",
+                "description": "(UTC-09:00) Alaska"
+            },
+            {
+                "code": "America/Tijuana",
+                "description": "(UTC-08:00) Pacific Time (US & Canada); Tijuana"
+            },
+            {
+                "code": "US/Mountain",
+                "description": "(UTC-07:00) Mountain Time (US & Canada)"
+            },
+            {
+                "code": "US/Arizona",
+                "description": "(UTC-07:00) Arizona"
+            },
+            {
+                "code": "US/Central",
+                "description": "(UTC-06:00) Central Time (US & Canada)"
+            },
+            {
+                "code": "Canada/Saskatchewan",
+                "description": "(UTC-06:00) Saskatchewan"
+            },
+            {
+                "code": "America/Mexico_City",
+                "description": "(UTC-06:00) Mexico City"
+            },
+            {
+                "code": "America/Costa_Rica",
+                "description": "(UTC-06:00) Central America"
+            },
+            {
+                "code": "US/Eastern",
+                "description": "(UTC-05:00) Eastern Time (US & Canada)"
+            },
+            {
+                "code": "US/East-Indiana",
+                "description": "(UTC-05:00) Indiana (East)"
+            },
+            {
+                "code": "America/Bogota",
+                "description": "(UTC-05:00) Bogota, Lima, Quito"
+            },
+            {
+                "code": "Canada/Atlantic",
+                "description": "(UTC-04:00) Atlantic Time (Canada)"
+            },
+            {
+                "code": "America/Caracas",
+                "description": "(UTC-04:00) Caracas, La Paz"
+            },
+            {
+                "code": "America/Santiago",
+                "description": "(UTC-04:00) Santiago"
+            },
+            {
+                "code": "Canada/Newfoundland",
+                "description": "(UTC-03:30) Newfoundland"
+            },
+            {
+                "code": "Brazil/East",
+                "description": "(UTC-03:00) Brasilia"
+            },
+            {
+                "code": "America/Buenos_Aires",
+                "description": "(UTC-03:00) Buenos Aires, Georgetown"
+            },
+            {
+                "code": "America/Godthab",
+                "description": "(UTC-03:00) Greenland"
+            },
+            {
+                "code": "Atlantic/South_Georgia",
+                "description": "(UTC-02:00) Mid-Atlantic"
+            },
+            {
+                "code": "Atlantic/Azores",
+                "description": "(UTC-01:00) Azores"
+            },
+            {
+                "code": "Atlantic/Cape_Verde",
+                "description": "(UTC-01:00) Cape Verde Is."
+            },
+            {
+                "code": "Greenwich",
+                "description": "(UTC) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+            },
+            {
+                "code": "Africa/Casablanca",
+                "description": "(UTC) Casablanca, Monrovia"
+            },
+            {
+                "code": "Europe/Belgrade",
+                "description": "(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+            },
+            {
+                "code": "Europe/Sarajevo",
+                "description": "(UTC+01:00) Sarajevo, Skopje, Sofija, Vilnius, Warsaw, Zagreb"
+            },
+            {
+                "code": "Europe/Brussels",
+                "description": "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris"
+            },
+            {
+                "code": "Europe/Amsterdam",
+                "description": "(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna"
+            },
+            {
+                "code": "Africa/Bangui",
+                "description": "(UTC+01:00) West Central Africa"
+            },
+            {
+                "code": "Europe/Bucharest",
+                "description": "(UTC+02:00) Bucharest"
+            },
+            {
+                "code": "Africa/Cairo",
+                "description": "(UTC+02:00) Cairo"
+            },
+            {
+                "code": "Europe/Helsinki",
+                "description": "(UTC+02:00) Helsinki, Riga, Tallinn"
+            },
+            {
+                "code": "Europe/Athens",
+                "description": "(UTC+02:00) Athens, Istanbul, Minsk"
+            },
+            {
+                "code": "Asia/Jerusalem",
+                "description": "(UTC+02:00) Jerusalem"
+            },
+            {
+                "code": "Africa/Harare",
+                "description": "(UTC+02:00) Harare, Pretoria"
+            },
+            {
+                "code": "Europe/Moscow",
+                "description": "(UTC+03:00) Moscow, St. Petersburg, Volgograd"
+            },
+            {
+                "code": "Asia/Kuwait",
+                "description": "(UTC+03:00) Kuwait, Riyadh"
+            },
+            {
+                "code": "Africa/Nairobi",
+                "description": "(UTC+03:00) Nairobi"
+            },
+            {
+                "code": "Asia/Baghdad",
+                "description": "(UTC+03:00) Baghdad"
+            },
+            {
+                "code": "Asia/Tehran",
+                "description": "(UTC+03:30) Tehran"
+            },
+            {
+                "code": "Asia/Muscat",
+                "description": "(UTC+04:00) Abu Dhabi, Muscat"
+            },
+            {
+                "code": "Asia/Baku",
+                "description": "(UTC+04:00) Baku, Tbilisi, Yerevan"
+            },
+            {
+                "code": "Asia/Kabul",
+                "description": "(UTC+04:30) Kabul"
+            },
+            {
+                "code": "Asia/Yekaterinburg",
+                "description": "(UTC+05:00) Ekaterinburg"
+            },
+            {
+                "code": "Asia/Karachi",
+                "description": "(UTC+05:00) Islamabad, Karachi, Tashkent"
+            },
+            {
+                "code": "Asia/Calcutta",
+                "description": "(UTC+05:30) Calcutta, Chennai, Mumbai, New Delhi"
+            },
+            {
+                "code": "Asia/Katmandu",
+                "description": "(UTC+05:45) Kathmandu"
+            },
+            {
+                "code": "Asia/Dhaka",
+                "description": "(UTC+06:00) Astana, Dhaka"
+            },
+            {
+                "code": "Asia/Colombo",
+                "description": "(UTC+06:00) Sri Jayawardenepura"
+            },
+            {
+                "code": "Asia/Almaty",
+                "description": "(UTC+06:00) Almaty, Novosibirsk"
+            },
+            {
+                "code": "Asia/Rangoon",
+                "description": "(UTC+06:30) Rangoon"
+            },
+            {
+                "code": "Asia/Bangkok",
+                "description": "(UTC+07:00) Bangkok, Hanoi, Jakarta"
+            },
+            {
+                "code": "Asia/Krasnoyarsk",
+                "description": "(UTC+07:00) Krasnoyarsk"
+            },
+            {
+                "code": "Asia/Chongqing",
+                "description": "(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi"
+            },
+            {
+                "code": "Asia/Singapore",
+                "description": "(UTC+08:00) Kuala Lumpur, Singapore"
+            },
+            {
+                "code": "Asia/Taipei",
+                "description": "(UTC+08:00) Taipei"
+            },
+            {
+                "code": "Australia/Perth",
+                "description": "(UTC+08:00) Perth"
+            },
+            {
+                "code": "Asia/Irkutsk",
+                "description": "(UTC+08:00) Irkutsk, Ulaan Bataar"
+            },
+            {
+                "code": "Asia/Seoul",
+                "description": "(UTC+09:00) Seoul"
+            },
+            {
+                "code": "Asia/Tokyo",
+                "description": "(UTC+09:00) Osaka, Sapporo, Tokyo"
+            },
+            {
+                "code": "Asia/Yakutsk",
+                "description": "(UTC+09:00) Yakutsk"
+            },
+            {
+                "code": "Australia/Darwin",
+                "description": "(UTC+09:30) Darwin"
+            },
+            {
+                "code": "Australia/Adelaide",
+                "description": "(UTC+09:30) Adelaide"
+            },
+            {
+                "code": "Australia/Canberra",
+                "description": "(UTC+10:00) Canberra, Melbourne, Sydney"
+            },
+            {
+                "code": "Australia/Brisbane",
+                "description": "(UTC+10:00) Brisbane"
+            },
+            {
+                "code": "Australia/Hobart",
+                "description": "(UTC+10:00) Hobart"
+            },
+            {
+                "code": "Asia/Vladivostok",
+                "description": "(UTC+10:00) Vladivostok"
+            },
+            {
+                "code": "Pacific/Guam",
+                "description": "(UTC+10:00) Guam, Port Moresby"
+            },
+            {
+                "code": "Asia/Magadan",
+                "description": "(UTC+11:00) Magadan, Solomon Is., New Caledonia"
+            },
+            {
+                "code": "Pacific/Fiji",
+                "description": "(UTC+12:00) Fiji, Kamchatka, Marshall Is."
+            },
+            {
+                "code": "Pacific/Auckland",
+                "description": "(UTC+12:00) Auckland, Wellington"
+            },
+            {
+                "code": "Etc/GMT-13",
+                "description": "(UTC+13:00) Nuku')alofa"
+            },
+            {
+                "code": "America/New_York",
+                "description": "(UTC-04:00) Eastern Time (US & Canada); New York"
+            }
+        ]
+    },
+    "hotelId": 11298,
+    "hotelName": "TRAVELCLICK – QA Platform Property 18",
+    "languages": [
+        {
+            "languageId": 1,
+            "languageCode": "EN_US",
+            "languageName": "English (US)",
+            "nativeLanguageName": "English (US)",
+            "isDefault": true
+        },
+        {
+            "languageId": 3,
+            "languageCode": "FR_FR",
+            "languageName": "French",
+            "nativeLanguageName": "Français",
+            "isDefault": false
+        }
+    ],
+    "ratePlanCount":"35" ,
+    "rooomTypeCount":"2" ,
+    "partners": [
+        {
+            "distributorIdentifier": "EXPEDIA",
+            "identifier": "EXPEDIA",
+            "name": "Expedia"
+        },
+        {
+            "distributorIdentifier": "BOOKINGCOM",
+            "identifier": "BOOKINGCOM",
+            "name": "Booking.com"
+        }
+    ]
+}

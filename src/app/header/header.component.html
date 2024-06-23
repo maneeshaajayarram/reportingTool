@@ -1,0 +1,76 @@
+<div class="container-fluid">
+    <h1 class="title">Channel Connectivity Snapshot</h1>
+    <div class="row titles">
+       <div class="col-sm-4">
+           <p>
+             <i class="bi bi-truck-flatbed bed"></i>
+              <strong>Total number of CRS rooms mapped:  </strong>
+              <span [class.a] = "!data?.rooomTypeCount">{{ data?.rooomTypeCount ? data?.rooomTypeCount : 'Data not found' }}</span>
+           </p>
+           <p>
+             <i class="bi bi-currency-dollar dollar"></i>
+              <strong>Total number of CRS rate plans mapped:  </strong> 
+              <span [ngClass]=" data?.ratePlanCount ? '' : 'nodata' " >{{ data?.ratePlanCount ? data?.ratePlanCount : 'Data not found'}}</span>
+           </p>
+       </div>
+       <div class="col-sm-4">
+           <p>   
+               <i class="bi bi-clock clock"></i>
+               <strong>Hotel timezone:  </strong>
+               <span [class.a] = "!data?.timezoneInfo?.propertyTimeZone">{{data?.timezoneInfo?.propertyTimeZone ?  data?.timezoneInfo?.propertyTimeZone : 'Data not found'}}</span>
+            </p>
+           <p>
+              <i class="bi bi-globe globe" ></i>
+              <strong>Number of channels mapped:  </strong>
+               <span [class.a] = " !data?.partners.length ">{{ data?.partners.length ? data?.partners.length : 'Data not found'}}</span>
+            </p>
+       </div>
+       <div class="col-sm-4 refresh">
+           <p>
+              Refresh
+               <button class="btn refreshbtn">
+                   <i class="bi bi-arrow-clockwise"></i>
+               </button>
+           </p>
+           
+       </div>
+    </div>
+    
+    
+
+
+    <div class="row information">
+        <div class="col-sm-3">
+            <div>
+              <p>Last Submitted</p>
+            </div>
+            <button class="btn" (click)="sendData(1)"> 24 hours</button>
+            <button class="btn" (click)="sendData(3)"> 3 days </button>
+            <button class="btn" (click)="sendData(7)"> 7 days </button>
+            <button class="btn" (click)="sendData(14)"> 14 days </button>
+        </div>
+        <div class="col-sm-3">
+            <div >
+                <p>Submitted Dates<sup class="star">*</sup></p>
+            </div>
+            <form>
+               <input type="date" name="inpt" class="form-control" [(ngModel)]="inputStart" > - <input type="date" class="form-control" name="inptt" [(ngModel)]="inputEnd">
+            </form>
+           
+        </div>
+        <div class="col-sm-3">
+            <div>
+                <p>ARI Stay Date</p>
+            </div>
+            <form>
+                <input type="date" name="inpt" class="form-control" [(ngModel)]="ARIstart" > - <input type="date" class="form-control" name="inpt" [(ngModel)]="ARIend" >
+            </form>
+        </div>
+        <div class="col-sm-3">
+             <button class="btn applybtn" (click)="sendInput()">Apply</button>
+             <button class="btn resetbtn">Reset dates</button>
+        </div>
+
+    </div>
+</div>
+
