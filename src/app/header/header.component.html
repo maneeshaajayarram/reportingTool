@@ -67,10 +67,15 @@
             </form>
         </div>
         <div class="col-sm-3">
-             <button class="btn applybtn" (click)="sendInput()">Apply</button>
+             <button class="btn applybtn" (click)="sendInput()" (click)="getTable()">Apply</button>
              <button class="btn resetbtn">Reset dates</button>
         </div>
 
     </div>
 </div>
 
+
+  <app-channel-table [newTableData]="modifiedTableData" *ngIf="modifiedTableData"></app-channel-table>
+
+
+ 

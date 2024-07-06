@@ -1,0 +1,26 @@
+
+<div class="container-fluid">
+    <table class="table bg-secondary">
+        <thead>
+           <tr class="bold">
+                <td scope="col">Channel Name</td>
+                <td scope="col" (click)="sort('totalAriTxn')">Total ARI transactions</td>
+                <td scope="col" (click)="sort('percentageOfSuccessTxn')">Success</td>
+                <td scope="col" (click)="sort('percentageOfTechFailureTxn')">Technical Failures</td>
+                <td scope="col" (click)="sort('percentageOfConfigErrorTxn')">Configuration errors</td>
+                <td scope="col" (click)="sort('percentageOfUpdateWarningTxn')">Update Warnings</td>
+           </tr>
+        </thead>
+        <tbody *ngFor ="let data of orginalNewTableData | sort: propertyName : order: o">
+            <tr>
+               <td  (click)="sendChannelName(data.channelName)">  {{ data.channelName }} </td>
+               <td>  {{ data.totalAriTxn }} </td>
+               <td>  {{ data.percentageOfSuccessTxn }} </td>
+               <td>  {{ data.percentageOfTechFailureTxn }} </td>
+               <td>  {{ data.percentageOfConfigErrorTxn }} </td>
+               <td>  {{ data.percentageOfUpdateWarningTxn }} </td>
+           </tr>
+        </tbody>
+
+    </table>
+</div>

@@ -19,6 +19,10 @@ export class HeaderComponent implements OnInit {
   ARIstart: any = '';
   ARIend: any = '';
 
+  modifiedTableData:any;
+  tableData:any
+
+
   constructor(private commonservice: CommonService, private cdr:ChangeDetectorRef) {}
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
@@ -36,7 +40,6 @@ export class HeaderComponent implements OnInit {
   }
 
   sendData(ndays: any) {
-    debugger
     this.endDate = new Date();
     this.startDate = new Date();
     this.startDate = this.startDate.setDate(this.startDate.getDate() - ndays);
@@ -57,21 +60,9 @@ export class HeaderComponent implements OnInit {
         this.ARIend
       );
     }
-
-  }
+ }
   
-  
-
-  // _getInputTransaction(inputStart: any, inputEnd: any, aris: any, arie: any) {
-  //   this.commonservice
-  //     .getInputTransactionDetails(inputStart, inputEnd, aris, arie)
-  //     .subscribe((res) => {
-  //       console.log(res, 'input');
-  //     });
-  // }
- 
   sendInput() {
-    debugger
     if (this.ARIstart == '' && this.ARIend == '') {
       this._getTransactionDetails(this.inputStart, this.inputEnd, 0, 0);
     } else {
@@ -83,6 +74,33 @@ export class HeaderComponent implements OnInit {
       );
     }
   }
-
-
+  
+  getNewTable(channelsdetails:any){
+    this.modifiedTableData= [];
+    let modifiedArr= channelsdetails.map((channelDetails:any)=>{
+        let modifiedObj= {
+          "channelName": channelDetails.channelDetails.channelName,
+          "totalAriTxn": channelDetails.totalAriTxn,
+          "percentageOfSuccessTxn": channelDetails.percentageOfSuccessTxn,
+          "percentageOfTechFailureTxn": channelDetails.percentageOfTechFailureTxn,
+          "percentageOfConfigErrorTxn": channelDetails.percentageOfConfigErrorTxn,
+          "percentageOfUpdateWarningTxn": channelDetails.percentageOfUpdateWarningTxn,
+        }
+        this.modifiedTableData.push(modifiedObj)
+      return channelDetails
+    })
+  }
+ 
+  getTable(){
+      this.commonservice.getTableDetails().subscribe((res: any)=>{
+        this.tableData= res
+        console.log(this.tableData.landingPageTableResults.tableDetails)
+        this.getNewTable(this.tableData.landingPageTableResults.tableDetails);
+      })
+  }
+  
+  
 }
+
+
+

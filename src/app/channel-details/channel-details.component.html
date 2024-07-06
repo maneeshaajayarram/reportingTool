@@ -1,0 +1,171 @@
+<div class="container-fluid">
+    <header class="row">
+        <h1>Channel Drill Down: <span class="channel"> {{ channelName }} </span></h1>
+    </header> 
+     
+    
+    <div class="row">
+      <div class=" col-5">
+          <p>
+              <i class="bi bi-truck-flatbed"></i>
+             <strong>Number of CRS rooms mapped to this channel: </strong>  
+             <span [class.dataNotFound]="!snapData?.rooomTypeCount">{{ snapData?.rooomTypeCount ? snapData['rooomTypeCount'] : 'Data not found' }} </span>
+          </p>
+          <p>
+              <i class="bi bi-currency-dollar"></i>
+              <strong>   Number of CRS rate plans mapped to this channel: </strong>
+              <span [class.dataNotFound]="!snapData?.ratePlanCount" > {{ snapData?.ratePlanCount ? snapData['ratePlanCount'] : 'Data not found' }}  </span>
+          </p>
+      </div>
+      <div class="col-7">
+           <p>
+              <i class="bi bi-clock"></i>
+            <strong>Hotel timezone: </strong>
+              <span [class.dataNotFound]="!snapData?.timezoneInfo['propertyTimeZone']">{{ snapData?.timezoneInfo['propertyTimeZone']  ?  snapData?.timezoneInfo['propertyTimeZone']: 'Data not found' }}</span>
+           </p>
+           <p >
+             <i class="bi bi-plug"></i>
+              <strong> Channel activated: </strong>
+              <span [class.dataNotFound]="!snapData?.channelActivated"> {{ snapData?.channelActivated ? snapData?.channelActivated : 'Data not found'}}</span>
+           </p>
+      </div>
+
+    </div>
+
+
+    <hr>
+
+
+    <div class="row">
+      <div class="col-3 daysBtnDiv">
+        <button class="btn" (click)="sendDates(24)">24 days</button>
+        <button class="btn" (click)="sendDates(3)">3 days</button>
+        <button class="btn" (click)="sendDates(7)">7 days</button>
+        <button class="btn" (click)="sendDates(14)">14 days</button>
+      </div>
+      <div class="col-3">
+        <p>Submitted Dates<em>*</em></p>
+        <form class="submitInputs">
+          <input type="date" name="submit" class="form-control" [(ngModel)]="submitStartDate"> - <input type="date" name="submit" class="form-control" [(ngModel)]="submitEndDate">
+        </form>
+      </div>
+      <div class="col-3">
+        <p>ARI Stay Dates</p>
+        <form class="ARIInputs">
+          <input type="date" name="submit" class="form-control" [(ngModel)]="ARIStartDate"> - <input type="date" name="submit" class="form-control" [(ngModel)]="ARIEndDate">
+        </form>
+      </div>
+      <div class="col-3 applyResetDiv">
+        <button class="btn applyBtn">Apply</button>
+        <button class="btn resetBtn">Reset filters</button>
+      </div>
+    </div>
+
+  <div class=" container-fluid transactionDetails">
+    <div class="row">
+      <p class="col-2 transaction">Transaction Results<button class="numberBtn">10,985</button></p>
+      <div class="col-3 timeDiv">
+       <select class="form-select timeInfo">
+          <option *ngFor="let time of timeZoneInfo">{{time.description}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+     <div class="col-4 checkBoxDiv">
+        <div class="form-check">
+         <input class="form-check-input" type="checkbox"  id="checkBox1">
+         <label class="form-check-label" for="checkBox1">  Success </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox"  id="checkBox2">
+          <label class="form-check-label" for="checkBox2">  Technical failure </label>
+        </div>
+      
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox"  id="checkBox3">
+          <label class="form-check-label" for="checkBox3"> Configuration errors</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox"  id="checkBox4">
+          <label class="form-check-label" for="checkBox4"> Update warnings</label>
+        </div>
+      </div>
+
+      <div class="col-8 resultDescriptionDiv">
+        
+        <div class="result"> 
+          <label>Result Description</label>
+        </div>
+
+        <div class="filters descriptionFilterDiv">
+          <select class="form-select descriptionFilter">
+            <option selected disabled>Filter by description</option>
+            <option *ngFor="let item of resultDescriptionData">{{item}}</option>
+          </select>
+        </div>
+
+        <div class="advBtnDiv">
+          <button class="btn advbtn" (click)="showAdvanceFilters()" ><i class="bi bi-chevron-down" *ngIf="!isVisible"></i><i class="bi bi-chevron-up" *ngIf="isVisible"></i> Advance filter</button>
+        </div>
+
+       <div class="resBtnDiv">
+         <button class="btn resbtn"><i class="bi bi-funnel-fill"></i>Result filter</button>
+       </div>
+      </div>
+    </div>
+    <ng-container *ngIf="isVisible">
+      <div class="row advanceFilterDiv">
+        <div class="col-3 d-flex flex-wrap-wrap">
+          <label for="transactionId">Transaction ID</label>
+          <input type="text" placeholder="Filter by ID" id="transactionId">
+       </div>
+        <div class="col-4 d-flex flex-wrap-wrap">
+          <label for="ratePlan" class="rateplan">Rate Plan</label>
+          <select class="form-select rateplanselect">
+            <option selected disabled>Filter by rate plan</option>
+            <option>1</option>
+          </select>
+        </div>
+        <div class="col-4 d-flex flex-wrap-wrap">
+          <label for="roomtype" class="roomtype">Room Type</label>
+          <select class="form-select roomtypeselect">
+            <option selected disabled>Filter by rate plan</option>
+            <option>1</option>
+          </select>
+         
+        </div> 
+        <div class="col-1">
+          <button class="applybtn">Apply</button>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="container row transactionFilters" *ngFor="let item of newTransactionResultData">
+    <div class="col-6 d-flex flex-wrap-wrap">
+      <div class="me-2">
+        <button class="chevron-rightbtn"><i class="bi bi-chevron-right"></i></button>
+      </div>
+      <div class="me-2">
+        <i class="bi bi-check-circle-fill" *ngIf="item.category == 'Success' "></i>
+        <i class="bi bi-dash-circle-fill" *ngIf="item.category == 'Technical Failure' "></i>
+        <i class="bi bi-exclamation-triangle-fill" *ngIf="item.category == 'Configuration Error' "></i>
+        <i class="bi bi-exclamation-circle-fill" *ngIf="item.category == 'Update warning' "></i>
+      </div>
+      <div>
+        {{item.category}}
+      </div>
+    </div>
+    <div class="col-6 d-flex flex-wrap-wrap">
+      <div class="me-3">
+        <button class="numberTag">{{item.count}}</button>
+      </div>
+      <div>
+        {{item.transactionDescription}}
+      </div>
+    </div>
+    
+  </div>
+</div>
