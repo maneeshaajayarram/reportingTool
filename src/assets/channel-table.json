@@ -1,0 +1,159 @@
+{
+    "landingPageResults": {
+      "technicalFailedTxn": {
+        "category": "Technical Failure",
+        "percentage": 15.06,
+        "transactions": [
+          {
+            "cmResponseCode": "CM2001",
+            "count": 53,
+            "transactionDescription": "Unable to process: Technical failure (Amadeus side)."
+          },
+          {
+            "cmResponseCode": "CM2035",
+            "count": 55,
+            "transactionDescription": "Unable to process: Technical failure (Amadeus side)."
+          },
+          {
+            "cmResponseCode": "CM2001",
+            "count": 53,
+            "transactionDescription": "Unable to process: Technical failure (Amadeus side)."
+          }
+        ]
+      },
+      "successTxn": {
+        "category": "Success",
+        "percentage": 50.57,
+        "transactions": [
+          {
+            "cmResponseCode": "CM0001",
+            "count": 178,
+            "transactionDescription": "Successfully updated"
+          }
+        ]
+      },
+      "updateWarningTxn": {
+        "category": "Update warning",
+        "percentage": 1.99,
+        "transactions": [
+          {
+            "cmResponseCode": "CM0002",
+            "count": 7,
+            "transactionDescription": "Warning update: Partially updated or may not have updated as expected"
+          }
+        ]
+      },
+      "configErrorTxn": {
+        "category": "Configuration Error",
+        "percentage": 32.39,
+        "transactions": [
+          {
+            "cmResponseCode": "CM1003",
+            "count": 5,
+            "transactionDescription": "Unable to process: Date range is invalid."
+          },
+          {
+            "cmResponseCode": "CM1004",
+            "count": 1,
+            "transactionDescription": "Unable to process: Date range is out of bounds."
+          },
+          {
+            "cmResponseCode": "CM1005",
+            "count": 108,
+            "transactionDescription": "Unable to process: Invalid room or rate plan."
+          }
+        ]
+      }
+    },
+    "landingPageTableResults": {
+      "tableDetails": [
+        {
+          "totalAriTxn": 0,
+          "percentageOfAriTxn": 6,
+          "totalSuccessTxn": 0,
+          "percentageOfSuccessTxn": 0,
+          "totalTechFailureTxn": 0,
+          "percentageOfTechFailureTxn": 0,
+          "totalConfigErrorTxn": 0,
+          "percentageOfConfigErrorTxn": 0,
+          "totalUpdateWarningTxn": 0,
+          "percentageOfUpdateWarningTxn": 0,
+          "channelDetails": {
+            "channelName": "Transactions aggregate",
+            "channelDistributor": "",
+            "partnerIdentifier": ""
+          }
+        },
+        {
+          "totalAriTxn": 5000,
+          "percentageOfAriTxn": 0,
+          "totalSuccessTxn": 0,
+          "percentageOfSuccessTxn": 0,
+          "totalTechFailureTxn": 0,
+          "percentageOfTechFailureTxn": 0,
+          "totalConfigErrorTxn": 0,
+          "percentageOfConfigErrorTxn": 0,
+          "totalUpdateWarningTxn": 0,
+          "percentageOfUpdateWarningTxn": 0,
+          "channelDetails": {
+            "channelName": "Expedia",
+            "channelDistributor": "EXPEDIA",
+            "partnerIdentifier": "EXPEDIA"
+          }
+        },
+        {
+          "totalAriTxn": 3000,
+          "percentageOfAriTxn": 0,
+          "totalSuccessTxn": 0,
+          "percentageOfSuccessTxn": 0,
+          "totalTechFailureTxn": 0,
+          "percentageOfTechFailureTxn": 0,
+          "totalConfigErrorTxn": 0,
+          "percentageOfConfigErrorTxn": 0,
+          "totalUpdateWarningTxn": 0,
+          "percentageOfUpdateWarningTxn": 0,
+          "channelDetails": {
+            "channelName": "Booking.com",
+            "channelDistributor": "BOOKINGCOM",
+            "partnerIdentifier": "BOOKINGCOM"
+          }
+          
+        },
+        {
+          "totalAriTxn": 9000,
+          "percentageOfAriTxn": 0,
+          "totalSuccessTxn": 0,
+          "percentageOfSuccessTxn": 0,
+          "totalTechFailureTxn": 0,
+          "percentageOfTechFailureTxn": 0,
+          "totalConfigErrorTxn": 0,
+          "percentageOfConfigErrorTxn": 0,
+          "totalUpdateWarningTxn": 0,
+          "percentageOfUpdateWarningTxn": 0,
+          "channelDetails": {
+            "channelName": "vvv.com",
+            "channelDistributor": "BOOKINGCOM",
+            "partnerIdentifier": "BOOKINGCOM"
+          }
+          
+        },{
+          "totalAriTxn": 1200,
+          "percentageOfAriTxn": 0,
+          "totalSuccessTxn": 0,
+          "percentageOfSuccessTxn": 0,
+          "totalTechFailureTxn": 0,
+          "percentageOfTechFailureTxn": 0,
+          "totalConfigErrorTxn": 0,
+          "percentageOfConfigErrorTxn": 0,
+          "totalUpdateWarningTxn": 0,
+          "percentageOfUpdateWarningTxn": 0,
+          "channelDetails": {
+            "channelName": "iii.com",
+            "channelDistributor": "BOOKINGCOM",
+            "partnerIdentifier": "BOOKINGCOM"
+          }
+          
+        }
+      ]
+    }
+  }
